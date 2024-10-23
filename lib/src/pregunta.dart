@@ -415,4 +415,3 @@ class _PreguntaScreenState extends State<PreguntaScreen> {
     );
   }
 }
-///////
