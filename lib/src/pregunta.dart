@@ -340,10 +340,11 @@ class _PreguntaScreenState extends State<PreguntaScreen> {
     Question currentQuestion = questions[_currentQuestionIndex];
 
     return WillPopScope(
-      onWillPop: () async => true, // Desactiva el botón de ir atrás
+      onWillPop: () async => false, // Desactiva el botón de ir atrás
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
+          automaticallyImplyLeading: false,
           title: Text(
               'Pregunta ${_currentQuestionIndex + 1}/${questions.length} - Jugador: ${widget.players[widget.currentPlayerIndex].name}'),
         ),
